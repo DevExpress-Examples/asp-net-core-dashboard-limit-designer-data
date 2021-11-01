@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="SqlDataSource Dashboard (Custom Query)" />
+  <DataSources>
+    <SqlDataSource Name="Products" ComponentName="sqlDataSource1">
+      <Connection Name="NWindConnectionString" FromAppConfig="true" />
+      <Query Type="CustomSqlQuery" Name="queryCustomSQL">
+        <Parameter Name="queryParamTopID" Type="DevExpress.DataAccess.Expression">(null)([Parameters.DashboarParamTopID])</Parameter>
+        <Sql>SELECT ProductID, ProductName FROM Products WHERE ProductID &lt;= @queryParamTopID</Sql>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="sqlDataSource1" DataMember="queryCustomSQL">
+      <DataItems>
+        <Dimension DataMember="ProductName" DefaultId="DataItem1" />
+        <Dimension DataMember="ProductID" DefaultId="DataItem0" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Weight="50.044483985765126">
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="99.95551601423487">
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
