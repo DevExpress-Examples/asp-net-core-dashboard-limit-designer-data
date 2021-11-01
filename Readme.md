@@ -4,7 +4,7 @@
 <!-- default badges end -->
 # Dashboard for ASP.NET Core - How to Limit Data Displayed in Designer Mode
 
-This example shows how to filter data in [Designer mode](https://docs.devexpress.com/Dashboard/119983/web-dashboard/aspnet-core-dashboard-control/designer-and-viewer-modes). In this mode, the control displays only several records from the datasource to improve the performance.
+This example shows how to filter data in [Designer mode](https://docs.devexpress.com/Dashboard/119983/web-dashboard/aspnet-core-dashboard-control/designer-and-viewer-modes). In this mode, the control displays only several records at a time from the datasource to improve performance.
 
 On the client, the [DashboardControlOptions.onOptionChanged](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions#js_devexpress_dashboard_dashboardcontroloptions_onoptionchanged) event is handled to catch the moment when the working mode is changed. The current mode is passed to the server through the [AjaxRemoteService.headers](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.AjaxRemoteService#js_devexpress_dashboard_ajaxremoteservice_headers) dictionary. After that, the [DashboardControl.reloadData](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControl?p=netframework#js_devexpress_dashboard_dashboardcontrol_reloaddata) method call initiates a data reloding callback (See also: [Manage an In-Memory Data Cache](https://docs.devexpress.com/Dashboard/400983/web-dashboard/dashboard-backend/manage-an-in-memory-data-cache)).
 
