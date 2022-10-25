@@ -26,13 +26,10 @@ This example filters data in the following data sources:
   A custom SQL query contains the `queryParamTopID` parameter mapped to the [Dashboard Parameter](https://docs.devexpress.com/Dashboard/117062/web-dashboard/create-dashboards-on-the-web/data-analysis/dashboard-parameters?p=netframework) (see [Pass Parameter Values](https://docs.devexpress.com/Dashboard/117775/web-dashboard/create-dashboards-on-the-web/data-analysis/dashboard-parameters/pass-parameter-values) and [Pass Query Parameters](https://docs.devexpress.com/Dashboard/117192/web-dashboard/create-dashboards-on-the-web/providing-data/working-with-sql-data-sources/pass-query-parameters)). The dashboard parameter and its values are generated dynamically in the [DashboardConfigurator.CustomParameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.DashboardConfigurator.CustomParameters) event handler.
 
 
-<!-- default file list -->
-## Files to Look At
+## Files to Review
 
 * [Startup.cs](./CS/Startup.cs)
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
-
-<!-- default file list end -->
 
 ## Documentation
 
@@ -41,12 +38,10 @@ This example filters data in the following data sources:
 - [Dashboard Parameters](https://docs.devexpress.com/Dashboard/117062/web-dashboard/create-dashboards-on-the-web/data-analysis/dashboard-parameters?p=netframework)
 - [Pass Parameter Values](https://docs.devexpress.com/Dashboard/117775/web-dashboard/create-dashboards-on-the-web/data-analysis/dashboard-parameters/pass-parameter-values)
 - [Pass Query Parameters](https://docs.devexpress.com/Dashboard/117192/web-dashboard/create-dashboards-on-the-web/providing-data/working-with-sql-data-sources/pass-query-parameters)
+- [Performance Troubleshooting](https://docs.devexpress.com/Dashboard/403866/basic-concepts-and-terminology/bi-dashboard-performance/performance-troubleshooting)
 
 ## More Examples
 
 - [Dashboard for ASP.NET Core - How to implement authentication](https://github.com/DevExpress-Examples/ASPNET-Core-Dashboard-Authentication)
 - [Dashboard for ASP.NET Core - How to implement multi-tenant Dashboard architecture](https://github.com/DevExpress-Examples/DashboardUserBasedAspNetCore)
 - [Dashboard for ASP.NET Core - How to load different data based on the current user](https://github.com/DevExpress-Examples/DashboardDifferentUserDataAspNetCore)
-
-## See Also
-- [Web Dashboard - How to research performance issues (a lot of time to display a dashboard or perform a specific action)](https://supportcenter.devexpress.com/ticket/details/t754184/web-dashboard-how-to-research-performance-issues-a-lot-of-time-to-display-a-dashboard-or)
