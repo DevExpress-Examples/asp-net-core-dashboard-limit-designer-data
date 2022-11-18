@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
-    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="21.2.3" />
+    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.2.*" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112.2" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="LibraryManagerRestore" Condition=" '$(Configuration)' == 'Debug' And !Exists('node_modules') ">
