@@ -1,10 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
-    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.2.*" />
+    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.2.2" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112.2" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="LibraryManagerRestore" Condition=" '$(Configuration)' == 'Debug' And !Exists('node_modules') ">
@@ -17,3 +17,4 @@
     <Exec WorkingDirectory="." Command="npm install" />
   </Target>
 </Project>
+
