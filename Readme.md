@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1040827)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Dashboard for ASP.NET Core - How to Limit Data Displayed in Designer Mode
+# BI Dashboard for ASP.NET Core - How to Limit Data Displayed in Designer Mode
 
 This example shows how to filter data in [Designer mode](https://docs.devexpress.com/Dashboard/119983/web-dashboard/aspnet-core-dashboard-control/designer-and-viewer-modes). In this mode, the control displays only several records at a time from the datasource to improve performance.
 
